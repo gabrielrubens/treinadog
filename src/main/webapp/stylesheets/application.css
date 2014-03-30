@@ -1,5 +1,12 @@
 @CHARSET "UTF-8"; 
 
-@IMPORT url("scaffold.css");
-@IMPORT url("bootstrap-responsive.css");
-@IMPORT url("bootstrap.css");
+
+@IMPORT url("bootstrap/bootstrap.css");
+@IMPORT url("bootstrap/bootstrap-overrides.css");
+
+@IMPORT url("lib/jquery-ui-1.10.2.custom.css");
+@IMPORT url("lib/font-awesome.css");
+
+@IMPORT url("compiled/layout.css");
+@IMPORT url("compiled/elements.css");
+@IMPORT url("compiled/icons.css");

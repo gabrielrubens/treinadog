@@ -6,54 +6,115 @@
   <head>
     <title><decorator:title default="Treina Dog"/></title>
     <link rel="stylesheet" type="text/css" href="${path}/stylesheets/application.css"/>
+    
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css' />
+      <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css' />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <decorator:head/>
   </head>
   <body>
   
 
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container-fluid">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="brand" href="#">Treina Dog</a>
-          <div class="nav-collapse collapse">
-            <p class="navbar-text pull-right">
-              Logged in as <a href="#" class="navbar-link">Usuário</a>
-            </p>
-            <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">Sobre</a></li>
-              <li><a href="#contact">Contato</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
+   <!-- navbar -->
+    <header class="navbar navbar-inverse" role="banner">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">
+            <img src="${path}/images/icone_dog.png" alt="logo">
+           Treina Dog
+            </a>
         </div>
-      </div>
+        <ul class="nav navbar-nav pull-right hidden-xs">
+            <li class="hidden-xs hidden-sm navbar-brand">
+            
+          Seja bem vindo, Cássio!
+            </li>
+        </ul>
+    </header>
+    <!-- end navbar -->
+    
+    <!-- sidebar -->
+    <div id="sidebar-nav">
+        <ul id="dashboard-menu">
+            <li class="active">
+                <div >
+                    <div class="arrow"></div>
+                    <div class="arrow_border"></div>
+                </div>
+                <a href="index.html">
+                <i class="fa fa-home"></i>
+                    <span>Home</span>
+                </a>
+            </li> 
+            <li>
+                <div class="pointer">
+                    <div class="arrow"></div>
+                    <div class="arrow_border"></div>
+                </div>
+                <a href="index.html">
+                <i class="fa fa-group"></i>
+                    <span>Pessoas</span>
+                </a>
+            </li> 
+            <li>
+                <div>
+                    <div class="arrow"></div>
+                    <div class="arrow_border"></div>
+                </div>
+                <a href="index.html">
+                <i class="fa fa-github-alt"></i>
+                    <span>Cães</span>
+                </a>
+            </li> 
+            <li>
+                <div>
+                    <div class="arrow"></div>
+                    <div class="arrow_border"></div>
+                </div>
+                <a href="index.html">
+                <i class="fa fa-calendar"></i>
+                    <span>Agenda</span>
+                </a>
+            </li> 
+            <li>
+                <div>
+                    <div class="arrow"></div>
+                    <div class="arrow_border"></div>
+                </div>
+                <a href="index.html">
+                <i class="fa fa-hand-o-right"></i>
+                    <span>Comandos</span>
+                </a>
+            </li>
+             
+            <li>
+                <div>
+                    <div class="arrow"></div>
+                    <div class="arrow_border"></div>
+                </div>
+                <a href="index.html">
+                <i class="fa fa-file-text-o"></i>
+                    <span>Relatórios</span>
+                </a>
+            </li> 
+            
+                       
+        </ul>
     </div>
     
-    <div class="container-fluid">
-      <div class="row-fluid">
-        <div class="span3">
-          <div class="well sidebar-nav">
-            <ul class="nav nav-list">
-              <li class="nav-header">Sidebar</li>
-              <li class="active"><a href="#">Pessoa</a></li>
-              <li class=""><a href="#">Cães</a></li>
-              <li class=""><a href="#">Comandos</a></li>
-              <li class=""><a href="#">Rotina de Treino</a></li>
-              <li class=""><a href="#">Agenda</a></li>
-            </ul>
-          </div><!--/.well -->
-        </div><!--/span-->
-        <div class="span9">
-          <div class="hero-unit">
+
+    <div class="content">
 
     <decorator:body/>
     <script type="text/javascript" src="${path}/javascripts/jquery.min.js"></script>
     <script type="text/javascript" src="${path}/javascripts/application.js"></script>
-    <script type="text/javascript" src="${path}/javascripts/bootstrap.js"></script>
+    
+    <script type="text/javascript" src="${path}/javascripts/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="${path}/javascripts/js/jquery-ui-1.10.2.custom.min.js"></script>
+    <script type="text/javascript" src="${path}/javascripts/js/jquery.flot.js"></script>
+    <script type="text/javascript" src="${path}/javascripts/js/jquery.flot.resize.js"></script>
+    <script type="text/javascript" src="${path}/javascripts/js/jquery.flot.stack.js"></script>
+    <script type="text/javascript" src="${path}/javascripts/js/jquery.knob.js"></script>
+    <script type="text/javascript" src="${path}/javascripts/js/theme.js"></script>
   </body>
 </html>
+
