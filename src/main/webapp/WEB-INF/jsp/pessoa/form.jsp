@@ -14,7 +14,7 @@
 
 <div id="pad-wrapper" class="form-page">
 	<div class="actions form-actions">
-		<button type="submit" class="btn btn-primary">Salvar</button>
+		<button type="submit" class="btn-glow primary">Salvar</button>
 		<a href="${path}/pessoas" class="btn">Cancelar</a>
 	</div>
 	</div>

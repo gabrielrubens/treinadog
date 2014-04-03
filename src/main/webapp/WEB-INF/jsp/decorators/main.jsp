@@ -5,11 +5,22 @@
 <html>
   <head>
     <title><decorator:title default="Treina Dog"/></title>
+    
+     <script type="text/javascript" src="${path}/javascripts/jquery.min.js"></script>
+    <script type="text/javascript" src="${path}/javascripts/application.js"></script>
+    
+    <script type="text/javascript" src="${path}/javascripts/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="${path}/javascripts/js/jquery-ui-1.10.2.custom.min.js"></script>
+    <script type="text/javascript" src="${path}/javascripts/js/jquery.flot.js"></script>
+    <script type="text/javascript" src="${path}/javascripts/js/jquery.flot.resize.js"></script>
+    <script type="text/javascript" src="${path}/javascripts/js/jquery.flot.stack.js"></script>
+    <script type="text/javascript" src="${path}/javascripts/js/jquery.knob.js"></script>
+    <script type="text/javascript" src="${path}/javascripts/js/theme.js"></script>
+    
     <link rel="stylesheet" type="text/css" href="${path}/stylesheets/application.css"/>
     
       <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css' />
       <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css' />
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <decorator:head/>
   </head>
   <body>
@@ -105,16 +116,6 @@
     <div class="content">
 
     <decorator:body/>
-    <script type="text/javascript" src="${path}/javascripts/jquery.min.js"></script>
-    <script type="text/javascript" src="${path}/javascripts/application.js"></script>
-    
-    <script type="text/javascript" src="${path}/javascripts/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="${path}/javascripts/js/jquery-ui-1.10.2.custom.min.js"></script>
-    <script type="text/javascript" src="${path}/javascripts/js/jquery.flot.js"></script>
-    <script type="text/javascript" src="${path}/javascripts/js/jquery.flot.resize.js"></script>
-    <script type="text/javascript" src="${path}/javascripts/js/jquery.flot.stack.js"></script>
-    <script type="text/javascript" src="${path}/javascripts/js/jquery.knob.js"></script>
-    <script type="text/javascript" src="${path}/javascripts/js/theme.js"></script>
   </body>
 </html>
 

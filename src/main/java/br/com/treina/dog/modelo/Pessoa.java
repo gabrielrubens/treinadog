@@ -11,6 +11,7 @@ public class Pessoa extends Entity {
 	private String bairro;
 	private String cidade;
 	private String estado;
+	private int numero;
 
 	public void setNome(String nome) {
 		this.nome = nome;
@@ -74,6 +75,14 @@ public class Pessoa extends Entity {
 
 	public String getEstado() {
 		return estado;
+	}
+
+	public int getNumero() {
+		return numero;
+	}
+
+	public void setNumero(int numero) {
+		this.numero = numero;
 	}
 
 }

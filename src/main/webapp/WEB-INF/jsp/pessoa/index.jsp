@@ -5,7 +5,7 @@
 <body>
 	
 	<p>
-		<a href="${path}/pessoas/new" class="btn">Incluir</a>
+		<a href="${path}/pessoas/new" class="btn btn-default">Incluir</a>
 	</p> 
 	<table class="table table-striped table-hover" style="font-size: 15px;">
 		<tr>

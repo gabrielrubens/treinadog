@@ -5,7 +5,7 @@
 @IMPORT url("bootstrap/bootstrap-overrides.css");
 
 @IMPORT url("lib/jquery-ui-1.10.2.custom.css");
-@IMPORT url("lib/font-awesome.css");
+@IMPORT url("font-awesome.min.css");
 
 @IMPORT url("compiled/layout.css");
 @IMPORT url("compiled/elements.css");
