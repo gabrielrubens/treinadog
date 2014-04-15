@@ -25,7 +25,7 @@
   </head>
   <body>
   
-
+<c:if test="${userSession.logged }">
    <!-- navbar -->
     <header class="navbar navbar-inverse" role="banner">
         <div class="navbar-header">
@@ -37,7 +37,10 @@
         <ul class="nav navbar-nav pull-right hidden-xs">
             <li class="hidden-xs hidden-sm navbar-brand">
             
-          Seja bem vindo, Cássio!
+Olá, ${userSession.usuario.nome} 
+            </li>
+            <li>
+	            <a href="${path}/logout" class="btn btn-default">Logout</a>
             </li>
         </ul>
     </header>
@@ -51,7 +54,7 @@
                     <div class="arrow"></div>
                     <div class="arrow_border"></div>
                 </div>
-                <a href="index.html">
+                <a href="<c:url value="/index"/>">
                 <i class="fa fa-home"></i>
                     <span>Home</span>
                 </a>
@@ -61,7 +64,7 @@
                     <div class="arrow"></div>
                     <div class="arrow_border"></div>
                 </div>
-                <a href="index.html">
+                <a href="<c:url value="/pessoas"/>">
                 <i class="fa fa-group"></i>
                     <span>Pessoas</span>
                 </a>
@@ -112,8 +115,9 @@
         </ul>
     </div>
     
+</c:if>
 
-    <div class="content">
+    <div class="content" id="content">
 
     <decorator:body/>
   </body>

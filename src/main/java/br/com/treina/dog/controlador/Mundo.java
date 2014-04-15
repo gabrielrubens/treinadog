@@ -1,8 +1,8 @@
 package br.com.treina.dog.controlador;
 
-import br.com.caelum.vraptor.Resource;
+import br.com.caelum.vraptor.Controller;
 
-@Resource
+@Controller
 public class Mundo {
 
 	public String olaMundo(){

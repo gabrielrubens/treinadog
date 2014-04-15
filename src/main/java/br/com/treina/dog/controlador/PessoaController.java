@@ -2,21 +2,23 @@ package br.com.treina.dog.controlador;
 
 import java.util.List;
 
-import br.com.treina.dog.modelo.Pessoa;
-import br.com.treina.dog.repositorio.PessoaRepository;
+import javax.inject.Inject;
+
+import br.com.caelum.vraptor.Controller;
 import br.com.caelum.vraptor.Delete;
 import br.com.caelum.vraptor.Get;
 import br.com.caelum.vraptor.Post;
 import br.com.caelum.vraptor.Put;
-import br.com.caelum.vraptor.Resource;
 import br.com.caelum.vraptor.Result;
-import br.com.caelum.vraptor.Validator;
+import br.com.caelum.vraptor.validator.Validator;
+import br.com.treina.dog.modelo.Pessoa;
+import br.com.treina.dog.repositorio.PessoaRepository;
 
-@Resource
+@Controller
 public class PessoaController {
 
-	private final Result result;
-	private final PessoaRepository repository;
+	@Inject private final Result result;
+	@Inject private final PessoaRepository repository;
 	
 	private final Validator validator;
 	
@@ -28,6 +30,7 @@ public class PessoaController {
 		this.validator = validator;
 	}
 	
+	
 	@Get("/pessoas")
 	public List<Pessoa> index() {
 		return repository.findAll();
@@ -35,7 +38,6 @@ public class PessoaController {
 	
 	@Post("/pessoas")
 	public void create(Pessoa pessoa) {
-		validator.validate(pessoa);
 		validator.onErrorUsePageOf(this).newPessoa();
 		repository.create(pessoa);
 		result.redirectTo(this).index();
@@ -48,7 +50,6 @@ public class PessoaController {
 	
 	@Put("/pessoas")
 	public void update(Pessoa pessoa) {
-		validator.validate(pessoa);
 		validator.onErrorUsePageOf(this).edit(pessoa);
 		repository.update(pessoa);
 		result.redirectTo(this).index();
