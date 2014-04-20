@@ -6,9 +6,8 @@ import br.com.caelum.vraptor.Get;
 @Controller
 public class IndexController {
 
-	@Get("/index")
+	@Get(value={"/index","/"})
 	public void index() {
-		
 	}
 
 }

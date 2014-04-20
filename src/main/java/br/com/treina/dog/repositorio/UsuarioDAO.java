@@ -1,5 +1,6 @@
 package br.com.treina.dog.repositorio;
 
+import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.NoResultException;
 import javax.persistence.Query;
@@ -10,6 +11,7 @@ public class UsuarioDAO {
 	
 	EntityManager entityManager;
 	
+	@Inject
 	public UsuarioDAO(EntityManager entityManager) {
 		this.entityManager = entityManager;
 	}
